@@ -1,0 +1,39 @@
+@import './configurations/_colors.scss';
+
+body {
+  background-color: $bg-screen !important; 
+  font-family: $font-poppins;
+}
+
+p, h1, h2,h3,h4,h5,h6, div, span, button, * {
+  font-family: $font-poppins;
+}
+
+.bd-1 {
+  border: 1px solid red;
+}
+
+.page-container {
+  max-width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.h-100vh {
+  height: 100vh !important;
+}
+
+.slim-scroll {
+    // Custom Scroll 
+    &::-webkit-scrollbar {
+      width: 3px;
+      background-color: #DDD;;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: darkgrey;
+      outline: 1px solid darkgrey;
+      border-radius: 5px;
+      width: 10px;
+    }
+}

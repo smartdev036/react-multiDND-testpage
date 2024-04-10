@@ -1,0 +1,64 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 300px;
+  min-width: 240px;
+  padding: 50px;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid #F0F0F0; 
+  overflow-y: auto;
+  overflow-x: hidden;
+
+
+  .title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.03em; 
+    margin-bottom: 60px;     
+  }
+  ul{
+    list-style-type: none;
+    padding-left:3px;
+    li {
+      cursor: pointer;
+      padding: 10px 0;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 17px;
+      letter-spacing: 0.05em;
+      color: #9A9A9A;
+      &.active, &:hover {
+        color: #212121 !important;
+        .vertical-bar {
+          border-right: 6px solid #329C89;
+          border-radius: 6px;
+          position: absolute;
+          right: -3px;
+          top: 0;
+          height: 100%;
+          z-index: 99;
+        }
+      }
+      img {
+        height: 17px;
+        margin-right: 28px;
+        fill: red;
+      }
+    }
+  }
+
+  .top-menu {
+    margin-bottom: auto;
+  }
+  .bottom-menu {
+    margin-bottom: 20px;
+  }
+}
